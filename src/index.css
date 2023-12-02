@@ -66,3 +66,127 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+
+
+
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+.calendar-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.calendar-options {
+  margin-top: 50px;
+  margin-left: 10px;
+  display: flex;
+}
+.calendar-options span {
+  font-family: Inter;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #959494;
+  margin: 0 10px;
+}
+.calendar-content {
+  display: flex;
+}
+.calendar-months {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.calendar-months span {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #959494;
+}
+.calendar-week__names {
+  width: 15px;
+  margin-right: 5px;
+}
+.calendar-week__name {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #959494;
+}
+.calendar-row {
+  display: flex;
+}
+.day {
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  background-color: #254E77;
+  position: relative;
+}
+.hover {
+  display: none;
+  position: absolute;
+  top: -48px;
+  left: -65px;
+  width: 145px;
+  height: 48px;
+  background-image: url(./assets/Tooltip.svg);
+  border-image-repeat: round;
+  z-index: 10;
+  text-align: center;
+}
+.day:hover .hover:not(.hover:hover) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.hover p {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.hover span {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7C7C7C;  
+}
+
+.var-1 {
+  background-color: #EDEDED;
+}
+.var-2 {
+  background-color: #ACD5F2;
+}
+.var-3 {
+  background-color: #7FA8C9;
+}
+.var-4 {
+  background-color: #527BA0;
+}
+.var-5 {
+  background-color: #254E77;
+}
