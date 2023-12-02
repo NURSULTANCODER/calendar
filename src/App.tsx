@@ -128,7 +128,7 @@ function App() {
                       </div>) : (
                         <div className={classNames('day', {}, ['var-1'])} key={i}>
                           <div className='hover'>
-                            <p>0 contributions</p>
+                            <p>No contributions</p>
                             <span>{formatDate(item)}</span>
                           </div>
                         </div>
@@ -146,7 +146,7 @@ function App() {
         <span>меньше</span>
         <div className="day var-1">
           <div className='hover'>
-            <p>0 contributions</p>
+            <p>No contributions</p>
           </div>
         </div>
         <div className="day var-2">
