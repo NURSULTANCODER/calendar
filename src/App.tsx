@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useEffect, useState } from 'react'
 import { data } from './contribushions'
 import { classNames } from './classNames'
@@ -78,7 +79,14 @@ function App() {
   }, [])
 
   function formatDate(inputDate: string) {
-    const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+    interface optionsInterface {
+      weekday: string, 
+      month: string, 
+      day: string,
+      year: string
+    }
+    const options: optionsInterface = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+    // @ts-expect-error 
     const formattedDate = new Date(inputDate).toLocaleDateString('ru-RU', options);
     return formattedDate;
   }

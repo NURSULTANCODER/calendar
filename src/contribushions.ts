@@ -1,4 +1,9 @@
-export const data = {
+interface ContributionsData {
+  [date: string]: number;
+}
+
+
+export const data: ContributionsData = {
 '2022-10-26': 13,
 '2022-10-27': 6,
 '2022-10-28': 11,
