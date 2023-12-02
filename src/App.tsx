@@ -127,6 +127,10 @@ function App() {
                         </div>
                       </div>) : (
                         <div className={classNames('day', {}, ['var-1'])} key={i}>
+                          <div className='hover'>
+                            <p>0 contributions</p>
+                            <span>{formatDate(item)}</span>
+                          </div>
                         </div>
                       )
                     ))
